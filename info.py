@@ -15,9 +15,9 @@ def is_enabled(value, default):
 
 
 SESSION = environ.get('SESSION', 'media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '13985209'))
+API_HASH = environ.get('API_HASH', '9ecc14b98a6c7bfbc445f3b425a56e21')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7413667804:AAEJKxnvRmIdnsIbmpw0jvH-Lhzq7Fv5NLY")
 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
@@ -29,7 +29,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df5266
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/f983d857f3ce40795e4b8.jpg'))
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split() 
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]  #Admin Id
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7473766119').split()]  #Admin Id
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-100').split()] #Movie Database Channel Id
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-100'))  #Log Channel Id
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-100'))  #Streming Log Channel Id
