@@ -67,8 +67,8 @@ TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
 
 # Verification (Must Fill All Veriables. Else You Got Error
-SHORTENER_API = environ.get("SHORTENER_API", "")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "")
+SHORTENER_API = environ.get("SHORTENER_API", "inshorturl.com")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "fe8b524ab72d7b604f439e192623cf300d944963")
 
 SHORTENER_API2 = environ.get("SHORTENER_API2", "")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "")
@@ -122,7 +122,7 @@ if 'DYNO' in environ:
     APP_NAME = environ.get('APP_NAME')
 else:
     ON_HEROKU = False
-BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
+BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', 'xeric-sydelle-nitish70279-f2ddd954.koyeb.app/'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
